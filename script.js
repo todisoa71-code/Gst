@@ -21,13 +21,6 @@ form.addEventListener("submit", async function (event) {
         consentement: "Démonstration pédagogique"
     })
 });
-        result.textContent =
-            "Démonstration terminée. Aucune donnée de mot de passe n'a été envoyée.";
 
-        // Ne pas conserver le mot de passe fictif en mémoire.
-        document.getElementById("demo-password").value = "";
-    } catch (error) {
-        result.textContent = "Erreur lors de l'envoi des données.";
-    }
 });
 </script>
