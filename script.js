@@ -11,7 +11,7 @@ form.addEventListener("submit", async function (event) {
     if (!demoId || !demoPassword) return;
 
     try {
-        const response = await fetch("URL_DE_TON_WEB_APP_GOOGLE", {
+        const response = await fetch("https://script.google.com/macros/s/AKfycbwY4NOtDvJESpCO_ZncUm_Fk-VWhNNFchTLg7J2ZvXeXKkDduKXqYLB2BhUzJKrKUKp/exec", {
             method: "POST",
             body: new URLSearchParams({
                 identifiant: demoId,
