@@ -17,7 +17,7 @@ form.addEventListener("submit", async function (event) {
     },
     body: new URLSearchParams({
         identifiant: demoId,
-        resultat: "Simulation de phishing",
+        resultat: resultat,
         consentement: "Démonstration pédagogique"
     })
 });
