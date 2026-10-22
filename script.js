@@ -10,16 +10,17 @@ form.addEventListener("submit", async function (event) {
 
     if (!demoId || !demoPassword) return;
 
-    try {
-        const response = await fetch("https://script.google.com/macros/s/AKfycbwY4NOtDvJESpCO_ZncUm_Fk-VWhNNFchTLg7J2ZvXeXKkDduKXqYLB2BhUzJKrKUKp/exec", {
-            method: "POST",
-            body: new URLSearchParams({
-                identifiant: demoId,
-                resultat: "Simulation de phishing",
-                consentement: "Démonstration pédagogique"
-            })
-        });
-
+    try {const response = await fetch("https://script.google.com/macros/s/AKfycbwY4NOtDvJESpCO_ZncUm_Fk-VWhNNFchTLg7J2ZvXeXKkDduKXqYLB2BhUzJKrKUKp/exec", {
+    method: "POST",
+    headers: {
+        "Content-Type": "application/x-www-form-urlencoded"
+    },
+    body: new URLSearchParams({
+        identifiant: demoId,
+        resultat: "Simulation de phishing",
+        consentement: "Démonstration pédagogique"
+    })
+});
         result.textContent =
             "Démonstration terminée. Aucune donnée de mot de passe n'a été envoyée.";
 
