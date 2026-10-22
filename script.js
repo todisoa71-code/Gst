@@ -1,4 +1,4 @@
-<script>
+
 const form = document.getElementById("demo-form");
 
 form.addEventListener("submit", async function (event) {
@@ -29,4 +29,3 @@ form.addEventListener("submit", async function (event) {
         result.textContent = "Erreur lors de l'envoi des données.";
     }
 });
-</script>
