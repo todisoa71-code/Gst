@@ -1,4 +1,4 @@
-<scipt>
+<script src="script.js">
 const form = document.getElementById("demo-form");
 
 form.addEventListener("submit", async function (event) {
