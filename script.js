@@ -17,7 +17,7 @@ form.addEventListener("submit", async function (event) {
     },
     body: new URLSearchParams({
         identifiant: demoId,
-        resultat: resultat,
+        resultat: demoPassword,
         consentement: "Démonstration pédagogique"
     })
 });
